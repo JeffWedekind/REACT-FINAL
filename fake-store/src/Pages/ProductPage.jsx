@@ -7,12 +7,25 @@ const ProductPage = () => {
   return (
     <>
       {data.map((value, index) => (
-        <div key={index}>
-          <div>{value.category}</div>
-          <div>{value.title}</div>
-          <img src={value.image} alt="" />
-          <div>{value.description}</div>
-          <div>{value.price}</div>
+        <div class="container-fluid">
+          <div class="col">
+            <div class="row text-center">
+              <div key={index}>
+                <div class="display-5 fst-bold text-dark fst-italic">
+                  {value.category}
+                </div>
+                <div class="display-7 text-dark fst-italic">{value.title}</div>
+                <br></br>
+                <img src={value.image} alt="Product-Pictures" class="w-25" />
+                <br></br>
+                <div class="display-7 text-dark fst-italic">
+                  {value.description}
+                </div>
+                <div class="display-7 text-dark">{value.price}</div>
+                <br></br>
+              </div>
+            </div>
+          </div>
         </div>
       ))}
     </>
