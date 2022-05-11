@@ -15,13 +15,13 @@ export default function NavBar() {
             </Link>
           </div>
           <div>
-            <Link class="text-white" to="/about">
-              About
+            <Link class="text-white" to="/product-page">
+              Products
             </Link>
           </div>
           <div>
-            <Link class="text-white" to="/product-page">
-              Products
+            <Link class="text-white" to="/about">
+              About
             </Link>
           </div>
         </div>
