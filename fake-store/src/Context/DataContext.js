@@ -7,16 +7,15 @@ export const DataContext = createContext();
 const DataProvider = ({ children }) => {
   const [data, setData] = useState([]);
 
-  const fetchData = async() => {
+  const fetchData = async () => {
     const data = await getData();
-    setData(data)
-  }
+    setData(data);
+  };
 
-  React.useEffect(() =>{
-    fetchData()
-  },[])
-  
-  
+  React.useEffect(() => {
+    fetchData();
+  }, []);
+
   return (
     <DataContext.Provider value={{ data, setData }}>
       {children}

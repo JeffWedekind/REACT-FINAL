@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react";
 // Created a Footer component with bootstrap styling that includes a copyright message and social media links
 export default function Footer() {
   return (
@@ -28,4 +28,4 @@ export default function Footer() {
       </footer>
     </>
   );
-};
+}

@@ -3,7 +3,9 @@ import { DataContext } from "../Context/DataContext";
 import Cart from "./Cart";
 import { CartContext } from "../Context/CartContext";
 
+// Start Product Page Function
 const ProductPage = () => {
+  //  Set some variables
   const { data } = useContext(DataContext);
   const { cart, setCart } = useContext(CartContext);
   return (
@@ -24,7 +26,12 @@ const ProductPage = () => {
                   {value.description}
                 </div>
                 <div class="display-7 text-dark">{value.price}</div>
-                <button className="CartButton" onClick={() => setCart([...cart,value])}>BUY NOW</button>
+                <button
+                  className="CartButton"
+                  onClick={() => setCart([...cart, value])}
+                >
+                  BUY NOW
+                </button>
                 <br></br>
               </div>
             </div>

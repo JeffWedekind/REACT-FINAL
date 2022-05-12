@@ -16,7 +16,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/product-page" element={<ProductPage />} />
         <Route path="/cart" element={<Cart />} />
-        <Route path="*" element={<h1>No page exists</h1>} />
+        <Route path="*" element={<h1>Naw Bruhhhh! No page exists</h1>} />
       </Routes>
       <Footer />
     </>
