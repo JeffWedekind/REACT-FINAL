@@ -1,9 +1,11 @@
 import React, { useContext } from "react";
 import { DataContext } from "../Context/DataContext";
+import Cart from "./Cart";
+import { CartContext } from "../Context/CartContext";
 
 const ProductPage = () => {
   const { data } = useContext(DataContext);
-
+  const { cart, setCart } = useContext(CartContext);
   return (
     <>
       {data.map((value, index) => (
@@ -22,6 +24,7 @@ const ProductPage = () => {
                   {value.description}
                 </div>
                 <div class="display-7 text-dark">{value.price}</div>
+                <button className="CartButton" onClick={() => setCart([...cart,value])}>BUY NOW</button>
                 <br></br>
               </div>
             </div>

@@ -5,22 +5,27 @@ export default function NavBar() {
   return (
     <>
       <nav class="container-fluid">
-        <div class="row text-center bg-dark bg-opacity-75 p-3">
-          <a class="display-6 fst-bold text-light" href="">
-            <strong>Shnazzy Thrift Store</strong>
-          </a>
+        <div class="row text-center p-3 HeroFont text-dark">
+          <div class="display-6 fst-bold text-dark" href="">
+            Shnazzy Thrift Store
+          </div>
           <div>
-            <Link class="text-white" to="/">
+            <Link class="text-dark" to="/">
               Home
             </Link>
           </div>
           <div>
-            <Link class="text-white" to="/product-page">
+            <Link class="text-dark" to="/product-page">
               Products
             </Link>
           </div>
           <div>
-            <Link class="text-white" to="/about">
+            <Link class="text-dark" to="/cart">
+              Cart
+            </Link>
+          </div>
+          <div>
+            <Link class="text-dark" to="/about">
               About
             </Link>
           </div>

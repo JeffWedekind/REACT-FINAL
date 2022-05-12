@@ -7,8 +7,9 @@ const NotFound = () => {
         <div className="col-md-12 text-center flex-column">
           <h1 className="mt-5 ">404</h1>
           <h2>Page not found</h2>
-          <p className="lead">
-            The page you are looking for is under construction or is temporarily unavailable.
+          <p className="">
+            The page you are looking for is under construction or is temporarily
+            unavailable.
           </p>
         </div>
       </div>
